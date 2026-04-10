@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | PAL Labs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f1115;
+            --card-bg: #1a1d23;
+            --accent: #ff8c42; 
+            --text-main: #e2e8f0;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+            text-decoration: none;
+            color: var(--text-main);
+        }
+
+        .logo span { color: var(--accent); }
+
+        section {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        h1 { font-size: 2.5rem; margin-bottom: 2rem; }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #2d333d;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .project-card p {
+            color: var(--text-dim);
+            flex-grow: 1;
+        }
+
+        .btn-small {
+            display: inline-block;
+            background: var(--accent);
+            color: #000;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .btn-small:hover {
+            transform: scale(1.05);
+        }
+
+        .back-link {
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover { color: var(--accent); }
+
+        footer {
+            text-align: center; 
+            padding: 4rem; 
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">PAL<span>LABS</span></a>
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </header>
+
+    <section>
+        <h1>Our Projects</h1>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div>
+                    <h3>PAL Markup Language</h3>
+                    <p>A lightweight, human-readable markup language built for speed and simplicity. Designed to replace clunky syntax with intuitive patterns.</p>
+                </div>
+                <a href="https://pallanguage.vercel.app" class="btn-small" target="_blank">Explore Language</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>Internal Lab Tools</h3>
+                    <p>A suite of bespoke performance monitoring utilities built by our dev trio to streamline our daily workflows.</p>
+                </div>
+                <span style="color: var(--text-dim); font-style: italic; margin-top: 1.5rem;">Coming Soon</span>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>Project Omega</h3>
+                    <p>Experimental R&D focusing on low-latency data synchronization. Keep an eye on this space.</p>
+                </div>
+                <span style="color: var(--text-dim); font-style: italic; margin-top: 1.5rem;">In Development</span>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 PAL Labs. Built for progress.
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAL Labs | Innovation with a Human Touch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f1115;
+            --card-bg: #1a1d23;
+            --accent: #ff8c42; /* Innovation Orange */
+            --text-main: #e2e8f0;
+            --text-dim: #94a3b8;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 600;
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        .logo span { color: var(--accent); }
+
+        section {
+            max-width: 1000px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .hero { text-align: center; margin-top: 6rem; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; }
+        .hero p { color: var(--text-dim); font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .member-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #2d333d;
+            transition: transform 0.2s;
+        }
+
+        .member-card:hover { 
+            transform: translateY(-5px); 
+            border-color: var(--accent); 
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #000;
+            padding: 0.8rem 1.8rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center; 
+            padding: 4rem; 
+            color: var(--text-dim);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">PAL<span>LABS</span></div>
+        <nav>Built by friends.</nav>
+    </header>
+
+    <section class="hero">
+        <h1>Innovation, simplified.</h1>
+        <p>A small lab of three people building tools that feel like a partner, not a puzzle.</p>
+        <a href="projects.html" class="btn">Explore our Projects</a>
+    </section>
+
+    <section id="team">
+        <h2>The Trio</h2>
+        <div class="team-grid">
+            <div class="member-card">
+                <h3>The Architect</h3>
+                <p>Turning complex systems into logical flows. The backbone of our lab operations.</p>
+            </div>
+            <div class="member-card">
+                <h3>The Builder</h3>
+                <p>Bringing code to life. Specialist in high-performance tools and low-latency systems.</p>
+            </div>
+            <div class="member-card">
+                <h3>The Creative</h3>
+                <p>Ensuring that every tool we build is human-centric and actually pleasant to use.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 PAL Labs. Just three pals in a lab.
+    </footer>
+
+</body>
+</html>

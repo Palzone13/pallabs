@@ -64,11 +64,12 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: border-color 0.3s ease;
+            transition: all 0.3s ease;
         }
 
         .project-card:hover {
             border-color: var(--accent);
+            transform: translateY(-2px);
         }
 
         .project-card h3 {
@@ -148,6 +149,14 @@
                     <p>An experimental audio playground for generating mathematical music. Compose complex sonic patterns with minimal code.</p>
                 </div>
                 <a href="https://bytebeat-composer.vercel.app" class="btn-small" target="_blank">Bytebeat Composer</a>
+            </div>
+
+            <div class="project-card">
+                <div>
+                    <h3>Insane RPS</h3>
+                    <p>Think you know Rock Paper Scissors? This experimental version takes the classic game to a chaotic, high-stakes level.</p>
+                </div>
+                <a href="https://insane-rps.vercel.app" class="btn-small" target="_blank">Insane RPS</a>
             </div>
 
             <div class="project-card">

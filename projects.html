@@ -64,6 +64,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            transition: border-color 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
         }
 
         .project-card h3 {
@@ -121,6 +126,14 @@
         <h1>Our Projects</h1>
         <div class="project-grid">
             
+            <div class="project-card">
+                <div>
+                    <h3>Vault Drop</h3>
+                    <p>Secure, fast, and encrypted file sharing. A lab-grade solution for sending sensitive data without the footprint.</p>
+                </div>
+                <a href="https://vaultdropappshare.vercel.app" class="btn-small" target="_blank">Vault Drop File Share</a>
+            </div>
+
             <div class="project-card">
                 <div>
                     <h3>PAL Markup Language</h3>
